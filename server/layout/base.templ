@@ -1,0 +1,24 @@
+package serverLayout
+
+import "Gooo/server/generated"
+import "Gooo/server/utility"
+import "Gooo/helpers/gooo"
+
+templ Base(title string) {
+	<!DOCTYPE html>
+	<html lang="en" class={ gooo.GetTheme(ctx) }>
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			@Head(title)
+			//Provides the server live reload socket connection during local development
+			@serverUtility.SocketScript()
+			//Provides good navigation between server pages and client GoooLink
+			@serverUtility.ConnectFrontend("goooNavigation")
+			@serverGenerated.Tailwind()
+		</head>
+		<body class="w-dvw h-dvh bg-radial from-background via-background to-foreground/30 dark:bg-radial dark:from-go/20 dark:via-90% dark:via-background dark:to-background">
+			{ children... }
+		</body>
+	</html>
+}

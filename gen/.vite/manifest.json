@@ -1,0 +1,82 @@
+{
+  "_GoooLink.vue_vue_type_script_setup_true_lang.C0vsCQ6d.js": {
+    "file": "js/GoooLink.vue_vue_type_script_setup_true_lang.C0vsCQ6d.js",
+    "name": "GoooLink.vue_vue_type_script_setup_true_lang",
+    "imports": [
+      "_pinia.Ct1Kb_kd.js",
+      "client/utils/goooNavigation.ts",
+      "_reactivity.esm-bundler.VNJZQcYl.js"
+    ]
+  },
+  "_counter.B3ZrjAct.js": {
+    "file": "js/counter.B3ZrjAct.js",
+    "name": "counter",
+    "imports": [
+      "_pinia.Ct1Kb_kd.js",
+      "_reactivity.esm-bundler.VNJZQcYl.js"
+    ]
+  },
+  "_gooo-hydrate.DQSUyeGB.js": {
+    "file": "js/gooo-hydrate.DQSUyeGB.js",
+    "name": "gooo-hydrate"
+  },
+  "_pinia.Ct1Kb_kd.js": {
+    "file": "js/pinia.Ct1Kb_kd.js",
+    "name": "pinia",
+    "imports": [
+      "_reactivity.esm-bundler.VNJZQcYl.js"
+    ]
+  },
+  "_reactivity.esm-bundler.VNJZQcYl.js": {
+    "file": "js/reactivity.esm-bundler.VNJZQcYl.js",
+    "name": "reactivity.esm-bundler"
+  },
+  "client/home.ts": {
+    "file": "js/home.kRV3s9Pi.js",
+    "name": "home",
+    "src": "client/home.ts",
+    "isEntry": true,
+    "imports": [
+      "_pinia.Ct1Kb_kd.js",
+      "_counter.B3ZrjAct.js",
+      "_GoooLink.vue_vue_type_script_setup_true_lang.C0vsCQ6d.js",
+      "_reactivity.esm-bundler.VNJZQcYl.js",
+      "_gooo-hydrate.DQSUyeGB.js",
+      "client/utils/goooNavigation.ts"
+    ]
+  },
+  "client/themeSwitcher.ts": {
+    "file": "js/themeSwitcher.DO8d1u4R.js",
+    "name": "themeSwitcher",
+    "src": "client/themeSwitcher.ts",
+    "isEntry": true,
+    "imports": [
+      "_pinia.Ct1Kb_kd.js",
+      "_gooo-hydrate.DQSUyeGB.js",
+      "_reactivity.esm-bundler.VNJZQcYl.js",
+      "_counter.B3ZrjAct.js"
+    ]
+  },
+  "client/todo.ts": {
+    "file": "js/todo.Ba-OfZ5v.js",
+    "name": "todo",
+    "src": "client/todo.ts",
+    "isEntry": true,
+    "imports": [
+      "_pinia.Ct1Kb_kd.js",
+      "_gooo-hydrate.DQSUyeGB.js",
+      "_GoooLink.vue_vue_type_script_setup_true_lang.C0vsCQ6d.js",
+      "_reactivity.esm-bundler.VNJZQcYl.js",
+      "client/utils/goooNavigation.ts"
+    ]
+  },
+  "client/utils/goooNavigation.ts": {
+    "file": "js/goooNavigation.C-8mVQN_.js",
+    "name": "goooNavigation",
+    "src": "client/utils/goooNavigation.ts",
+    "isEntry": true,
+    "imports": [
+      "_reactivity.esm-bundler.VNJZQcYl.js"
+    ]
+  }
+}
