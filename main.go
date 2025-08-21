@@ -67,7 +67,6 @@ func main() {
 	}
 
 	e.Static("/static", "static")
-	e.Static("/gen", "gen")
 
 	e.File("/favicon.ico", "static/favicon.ico")
 

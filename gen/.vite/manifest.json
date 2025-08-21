@@ -1,72 +1,105 @@
 {
-  "_Button.vue_vue_type_script_setup_true_lang.E4yGaPsq.js": {
-    "file": "js/Button.vue_vue_type_script_setup_true_lang.E4yGaPsq.js",
+  "_Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js": {
+    "file": "js/Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js",
     "name": "Button.vue_vue_type_script_setup_true_lang",
     "imports": [
-      "_reactivity.esm-bundler.CPVMJwVP.js"
+      "_reactivity.esm-bundler.BjcA3cuu.js"
     ]
   },
-  "_GoooLink.vue_vue_type_script_setup_true_lang.BBCoKAt_.js": {
-    "file": "js/GoooLink.vue_vue_type_script_setup_true_lang.BBCoKAt_.js",
+  "_GoooLink.vue_vue_type_script_setup_true_lang.Cis1brJO.js": {
+    "file": "js/GoooLink.vue_vue_type_script_setup_true_lang.Cis1brJO.js",
     "name": "GoooLink.vue_vue_type_script_setup_true_lang",
     "imports": [
-      "_Button.vue_vue_type_script_setup_true_lang.E4yGaPsq.js",
+      "_Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js",
       "client/utils/goooNavigation.ts",
-      "_reactivity.esm-bundler.CPVMJwVP.js"
+      "_reactivity.esm-bundler.BjcA3cuu.js"
     ]
   },
   "_gooo-hydrate.CSnVZQ1T.js": {
     "file": "js/gooo-hydrate.CSnVZQ1T.js",
     "name": "gooo-hydrate"
   },
-  "_reactivity.esm-bundler.CPVMJwVP.js": {
-    "file": "js/reactivity.esm-bundler.CPVMJwVP.js",
+  "_reactivity.esm-bundler.BjcA3cuu.js": {
+    "file": "js/reactivity.esm-bundler.BjcA3cuu.js",
     "name": "reactivity.esm-bundler"
   },
+  "client/drawer.ts": {
+    "file": "js/drawer.CfBzbFio.js",
+    "name": "drawer",
+    "src": "client/drawer.ts",
+    "isEntry": true,
+    "imports": [
+      "_Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js",
+      "_reactivity.esm-bundler.BjcA3cuu.js",
+      "_GoooLink.vue_vue_type_script_setup_true_lang.Cis1brJO.js",
+      "_gooo-hydrate.CSnVZQ1T.js",
+      "client/utils/goooNavigation.ts"
+    ]
+  },
   "client/ghostLink.ts": {
-    "file": "js/ghostLink.CYM_VvL_.js",
+    "file": "js/ghostLink.Cp0JoWOW.js",
     "name": "ghostLink",
     "src": "client/ghostLink.ts",
     "isEntry": true,
     "imports": [
-      "_Button.vue_vue_type_script_setup_true_lang.E4yGaPsq.js",
+      "_Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js",
       "_gooo-hydrate.CSnVZQ1T.js",
-      "_GoooLink.vue_vue_type_script_setup_true_lang.BBCoKAt_.js",
-      "_reactivity.esm-bundler.CPVMJwVP.js",
+      "_GoooLink.vue_vue_type_script_setup_true_lang.Cis1brJO.js",
+      "_reactivity.esm-bundler.BjcA3cuu.js",
       "client/utils/goooNavigation.ts"
     ]
   },
+  "client/homeLogo.ts": {
+    "file": "js/homeLogo.BN-QaVo-.js",
+    "name": "homeLogo",
+    "src": "client/homeLogo.ts",
+    "isEntry": true,
+    "imports": [
+      "_Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js",
+      "_GoooLink.vue_vue_type_script_setup_true_lang.Cis1brJO.js",
+      "_gooo-hydrate.CSnVZQ1T.js",
+      "_reactivity.esm-bundler.BjcA3cuu.js",
+      "client/utils/goooNavigation.ts"
+    ],
+    "assets": [
+      "css/goo_resized.CJG9i3hV.webp"
+    ]
+  },
   "client/outlineGhostLink.ts": {
-    "file": "js/outlineGhostLink.C3YQiHBK.js",
+    "file": "js/outlineGhostLink.CT8el2yp.js",
     "name": "outlineGhostLink",
     "src": "client/outlineGhostLink.ts",
     "isEntry": true,
     "imports": [
-      "_Button.vue_vue_type_script_setup_true_lang.E4yGaPsq.js",
+      "_Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js",
       "_gooo-hydrate.CSnVZQ1T.js",
-      "_GoooLink.vue_vue_type_script_setup_true_lang.BBCoKAt_.js",
-      "_reactivity.esm-bundler.CPVMJwVP.js",
+      "_GoooLink.vue_vue_type_script_setup_true_lang.Cis1brJO.js",
+      "_reactivity.esm-bundler.BjcA3cuu.js",
       "client/utils/goooNavigation.ts"
     ]
   },
   "client/themeSwitcher.ts": {
-    "file": "js/themeSwitcher.BbxZLZRQ.js",
+    "file": "js/themeSwitcher.BBKZLMne.js",
     "name": "themeSwitcher",
     "src": "client/themeSwitcher.ts",
     "isEntry": true,
     "imports": [
-      "_Button.vue_vue_type_script_setup_true_lang.E4yGaPsq.js",
+      "_Button.vue_vue_type_script_setup_true_lang.ClckG_2U.js",
       "_gooo-hydrate.CSnVZQ1T.js",
-      "_reactivity.esm-bundler.CPVMJwVP.js"
+      "_reactivity.esm-bundler.BjcA3cuu.js"
     ]
   },
   "client/utils/goooNavigation.ts": {
-    "file": "js/goooNavigation.D_0S7L5_.js",
+    "file": "js/goooNavigation.CFShLEj9.js",
     "name": "goooNavigation",
     "src": "client/utils/goooNavigation.ts",
     "isEntry": true,
     "imports": [
-      "_reactivity.esm-bundler.CPVMJwVP.js"
+      "_reactivity.esm-bundler.BjcA3cuu.js"
     ]
+  },
+  "static/assets/img/goo_resized.webp": {
+    "file": "css/goo_resized.CJG9i3hV.webp",
+    "src": "static/assets/img/goo_resized.webp"
   }
 }

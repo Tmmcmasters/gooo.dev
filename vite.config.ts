@@ -27,6 +27,7 @@ export default defineConfig({
         ghostLink: fileURLToPath(new URL('./client/ghostLink.ts', import.meta.url)),
         outlineGhostLink: fileURLToPath(new URL('./client/outlineGhostLink.ts', import.meta.url)),
         drawer: fileURLToPath(new URL('./client/drawer.ts', import.meta.url)),
+        homeLogo: fileURLToPath(new URL('./client/homeLogo.ts', import.meta.url)),
       },
       output: {
         entryFileNames: 'js/[name].[hash].js',
@@ -45,7 +46,7 @@ export default defineConfig({
       protocol: 'ws',
       host: 'localhost',
       port: 5173
-    }
+    },
   },
   resolve: {
     alias: {
