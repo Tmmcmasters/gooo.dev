@@ -24,7 +24,7 @@ const navigationLinks = computed<NavigationLinks[]>(() => {
   ]
 })
 
-const drawerOpen = ref<boolean>(true)
+const drawerOpen = ref<boolean>(false)
 </script>
 
 <template>
