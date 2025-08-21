@@ -3,11 +3,9 @@ package GoooLink
 import "Gooo/server/utility"
 import "github.com/lithammer/shortuuid/v4"
 
-var uniqueID = shortuuid.New()
-
 templ Ghost(viteInputName string, url string, text string) {
-	<script type="application/json"></script>
-	<div id={ uniqueID }>
+	{{ uniqueId := "ghost-link-" + shortuuid.New() }}
+	<div id={ uniqueId } data-url={ url } data-text={ text }>
 		<a href={ url }>
 			{ text }
 		</a>

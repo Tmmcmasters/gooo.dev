@@ -4,12 +4,12 @@ import GhostLink from "./components/buttons/GhostLink/GhostLink.vue";
 import type { GhostLinkProps } from "./components/buttons/GhostLink";
 
 
-goooHydrate('ghostLink', '#ghost-link', () => {
+goooHydrate('ghostLink', 'ghost-link-', (el) => {
     const serverProps: GhostLinkProps = {
-        href: "",
-        text: "",
+        href: el.getAttribute('data-url') ?? "",
+        text: el.getAttribute('data-text') ?? "",
     }
     const app = createApp(GhostLink, serverProps)
-    app.mount('#ghost-link')
+    app.mount(el)
     return app;
 })
