@@ -8,9 +8,9 @@ package serverComponents
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "Gooo/server/icons"
 import "Gooo/server/utility"
 import "Gooo/helpers/gooo"
+import "Gooo/server/icons"
 
 func ThemeSwitcher() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -38,12 +38,12 @@ func ThemeSwitcher() templ.Component {
 			return templ_7745c5c3_Err
 		}
 		if gooo.GetTheme(ctx) == "light" {
-			templ_7745c5c3_Err = serverIcons.Moon().Render(ctx, templ_7745c5c3_Buffer)
+			templ_7745c5c3_Err = Icons.Moon().Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
 		} else {
-			templ_7745c5c3_Err = serverIcons.Sun().Render(ctx, templ_7745c5c3_Buffer)
+			templ_7745c5c3_Err = Icons.Sun().Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
