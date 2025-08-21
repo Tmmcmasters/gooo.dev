@@ -48,6 +48,9 @@ func main() {
 	}))
 
 	e.GET("/", handlers.HomeHandler)
+	e.GET("/get-started", handlers.GetStarted)
+	e.GET("/guide", handlers.Guide)
+	e.GET("/install", handlers.Install)
 
 	e.Use(func(next echo.HandlerFunc) echo.HandlerFunc {
 		return customMiddleware.EnvMiddleware(next, os.Getenv("ENV"))
