@@ -26,6 +26,7 @@ export default defineConfig({
         goooNavigation: fileURLToPath(new URL('./client/utils/goooNavigation.ts', import.meta.url)),
         themeSwitcher: fileURLToPath(new URL('./client/themeSwitcher.ts', import.meta.url)),
         todo: fileURLToPath(new URL('./client/todo.ts', import.meta.url)),
+        ghostLink: fileURLToPath(new URL('./client/ghostLink.ts', import.meta.url)),
       },
       output: {
         entryFileNames: 'js/[name].[hash].js',

@@ -5,8 +5,12 @@ import "github.com/lithammer/shortuuid/v4"
 
 var uniqueID = shortuuid.New()
 
-templ Ghost(viteInputName string, url string) {
-	<script type=""></script>
-	<div id={ uniqueID }></div>
+templ Ghost(viteInputName string, url string, text string) {
+	<script type="application/json"></script>
+	<div id={ uniqueID }>
+		<a href={ url }>
+			{ text }
+		</a>
+	</div>
 	@serverUtility.ConnectFrontend(viteInputName)
 }

@@ -4,6 +4,7 @@
 		"home": "client/home.ts",
 		"goooNavigation": "client/utils/goooNavigation.ts",
 		"themeSwitcher": "client/themeSwitcher.ts",
-		"todo": "client/todo.ts"
+		"todo": "client/todo.ts",
+		"ghostLink": "client/ghostLink.ts"
 	}
 }

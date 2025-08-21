@@ -1,6 +1,7 @@
 package serverPages
 
 import "Gooo/server/layout"
+import "Gooo/server/components/goooLink"
 
 templ Home() {
 	@serverLayout.Main("Gooo") {
@@ -11,6 +12,7 @@ templ Home() {
 					<p class="text-2xl text-muted-foreground font-medium text-center text-pretty">A set of developer tools for building performant web applications with Go, Vue, and Templ.</p>
 				</div>
 				<p>Get started</p>
+				@GoooLink.Ghost("ghostLink", "/get-started", "Get Started")
 			</div>
 		</div>
 	}
