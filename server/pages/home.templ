@@ -1,63 +1,9 @@
 package serverPages
 
 import "Gooo/server/layout"
-import "Gooo/server/icons"
-import "Gooo/server/utility"
 
 templ Home() {
 	@serverLayout.Main("Gooo") {
-		<div class="w-full flex flex-col items-center justify-center my-10" id="home">
-			// Mounted Zone
-			<div class="flex flex-col gap-5 h-full w-full">
-				<div class="flex items-center justify-between h-full gap-5 w-full flex-wrap">
-					<button
-						class="border rounded-md bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[>svg]:px-3 max-w-80 w-full h-32 text-2xl flex relative flex-col justify-start items-start gap-y-1.5"
-						type="button"
-					>
-						@serverIcons.ArrowTR()
-						@serverIcons.Doc()
-						<span class="font-semibold text-lg leading-none">Documentation</span>
-						<span class="text-sm text-muted-foreground text-pretty text-left w-full">It is recommended to read the documentation to get started.</span>
-					</button>
-					<button
-						class="border rounded-md bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[>svg]:px-3 max-w-80 w-full h-32 text-2xl  "
-						type="button"
-					>
-						Counter: 0
-					</button>
-					<button
-						class="border rounded-md bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[>svg]:px-3 max-w-80 w-full h-32 text-2xl flex relative flex-col justify-start items-start gap-y-1.5"
-						type="button"
-					>
-						@serverIcons.Todo()
-						@serverIcons.ArrowR()
-						<span class="font-semibold text-lg leading-none">To Do - <i>Example</i> </span>
-						<span class="text-sm text-muted-foreground text-pretty text-left w-full">
-							This is an example of a link to another page and to-do list.
-						</span>
-					</button>
-					<button
-						class="border rounded-md bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[>svg]:px-3 max-w-80 w-full  text-2xl flex relative flex-col justify-start items-start gap-y-1.5 h-fit"
-						type="button"
-					>
-						@serverIcons.Todo()
-						@serverIcons.ArrowR()
-						<span class="font-semibold text-lg leading-none">Server Props</span>
-						<span class="text-sm text-muted-foreground text-pretty text-left w-full">
-							The data for this card has been provided by the server and passed down as props to this
-							component. <i>*This also links to /todo and doesn't prefetch twice.</i>
-						</span>
-						<script type="application/json" id="serverProps">
-							{
-								"Title": "Server Props",
-								"Description": "The data for this card has been provided by the server and passed down as props to this component.",
-								"Italic": "*This also links to /todo and doesn't prefetch twice."
-							}
-						</script>
-					</button>
-				</div>
-			</div>
-		</div>
-		@serverUtility.ConnectFrontend("home")
+		<div class="w-full flex flex-col items-center justify-center my-10"></div>
 	}
 }
