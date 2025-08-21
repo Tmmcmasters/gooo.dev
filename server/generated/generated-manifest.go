@@ -8,10 +8,6 @@ var ManifestCache = map[string]string{
 
 	"goooNavigation": "client/utils/goooNavigation.ts",
 
-	"home": "client/home.ts",
-
 	"themeSwitcher": "client/themeSwitcher.ts",
-
-	"todo": "client/todo.ts",
 
 }
