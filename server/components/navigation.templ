@@ -1,6 +1,7 @@
 package serverComponents
 
 import "Gooo/server/icons"
+import "Gooo/server/components/goooLink"
 
 templ Navigation() {
 	<nav class="sticky top-0 w-full py-2 flex justify-center items-center backdrop-blur-md bg-background/10 border-b border-border px-8">
@@ -12,9 +13,9 @@ templ Navigation() {
 			<div
 				class="flex items-center gap-x-6"
 			>
-				<p>Setup</p>
-				<p>Guide</p>
-				<p>Docs</p>
+				@GoooLink.Ghost("/get-started", "Get Started")
+				@GoooLink.Ghost("/guide", "Guide")
+				@GoooLink.Ghost("/install", "Docs")
 			</div>
 			// Icons
 			<div class="flex items-center justify-center gap-x-2">

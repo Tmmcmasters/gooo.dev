@@ -9,6 +9,7 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import "Gooo/server/icons"
+import "Gooo/server/components/goooLink"
 
 func Navigation() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -31,7 +32,23 @@ func Navigation() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<nav class=\"sticky top-0 w-full py-2 flex justify-center items-center backdrop-blur-md bg-background/10 border-b border-border px-8\"><div class=\" flex items-center justify-between w-full max-w-7xl\"><div class=\"flex items-center  justify-center\"><img class=\"w-8 drop-shadow-2xl drop-shadow-green-300/40 \" src=\"/static/assets/img/goo_resized.webp\" alt=\"A melting vue.js logo\"><p class=\"font-bold italic text-go drop-shadow-2xl drop-shadow-go/50 text-lg\">Gooo</p></div><div class=\"flex items-center gap-x-6\"><p>Setup</p><p>Guide</p><p>Docs</p></div><div class=\"flex items-center justify-center gap-x-2\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<nav class=\"sticky top-0 w-full py-2 flex justify-center items-center backdrop-blur-md bg-background/10 border-b border-border px-8\"><div class=\" flex items-center justify-between w-full max-w-7xl\"><div class=\"flex items-center  justify-center\"><img class=\"w-8 drop-shadow-2xl drop-shadow-green-300/40 \" src=\"/static/assets/img/goo_resized.webp\" alt=\"A melting vue.js logo\"><p class=\"font-bold italic text-go drop-shadow-2xl drop-shadow-go/50 text-lg\">Gooo</p></div><div class=\"flex items-center gap-x-6\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = GoooLink.Ghost("/get-started", "Get Started").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = GoooLink.Ghost("/guide", "Guide").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = GoooLink.Ghost("/install", "Docs").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</div><div class=\"flex items-center justify-center gap-x-2\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -43,7 +60,7 @@ func Navigation() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</div></div></nav>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</div></div></nav>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

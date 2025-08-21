@@ -44,11 +44,11 @@ func Home() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"w-full flex flex-col items-center justify-center gap-y-15 mt-20\"><div class=\"flex flex-col items-center justify-center gap-y-10 max-w-6xl\"><div class=\"flex flex-col items-center justify-center gap-y-5\"><p class=\"text-7xl font-extrabold text-center text-balance  bg-clip-text text-transparent bg-gradient-to-br from-vue to-go leading-tight \">The Go and Vue Web Toolkit</p><p class=\"text-2xl text-muted-foreground font-medium text-center text-pretty\">A set of developer tools for building performant web applications with Go, Vue, and Templ.</p></div><p>Get started</p>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"w-full flex flex-col items-center justify-center gap-y-15 mt-20\"><div class=\"flex flex-col items-center justify-center gap-y-10 max-w-6xl\"><div class=\"flex flex-col items-center justify-center gap-y-5\"><p class=\"text-7xl font-extrabold text-center text-balance  bg-clip-text text-transparent bg-gradient-to-br from-vue to-go leading-tight \">The Go and Vue Web Toolkit</p><p class=\"text-2xl text-muted-foreground font-medium text-center text-pretty\">A set of developer tools for building performant web applications with Go, Vue, and Templ.</p></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = GoooLink.Ghost("ghostLink", "/get-started", "Get Started").Render(ctx, templ_7745c5c3_Buffer)
+			templ_7745c5c3_Err = GoooLink.Ghost("/get-started", "Get Started").Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}

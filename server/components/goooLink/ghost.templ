@@ -3,12 +3,12 @@ package GoooLink
 import "Gooo/server/utility"
 import "github.com/lithammer/shortuuid/v4"
 
-templ Ghost(viteInputName string, url string, text string) {
+templ Ghost(url string, text string) {
 	{{ uniqueId := "ghost-link-" + shortuuid.New() }}
 	<div id={ uniqueId } data-url={ url } data-text={ text }>
 		<a href={ url }>
 			{ text }
 		</a>
 	</div>
-	@serverUtility.ConnectFrontend(viteInputName)
+	@serverUtility.ConnectFrontend("ghostLink")
 }
