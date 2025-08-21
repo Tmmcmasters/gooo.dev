@@ -1,0 +1,11 @@
+{
+	"url": "http://localhost:5173/",
+	"inputs": {
+		"goooNavigation": "client/utils/goooNavigation.ts",
+		"themeSwitcher": "client/themeSwitcher.ts",
+		"ghostLink": "client/ghostLink.ts",
+		"outlineGhostLink": "client/outlineGhostLink.ts",
+		"drawer": "client/drawer.ts",
+		"homeLogo": "client/homeLogo.ts"
+	}
+}
