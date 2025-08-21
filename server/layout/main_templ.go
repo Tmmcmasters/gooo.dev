@@ -47,15 +47,7 @@ func Main(title string) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, " <main class=\"w-full h-full bg-base-100 flex items-start justify-center px-4 py-2 overflow-auto\">")
-			if templ_7745c5c3_Err != nil {
-				return templ_7745c5c3_Err
-			}
-			templ_7745c5c3_Err = serverComponents.ThemeSwitcher().Render(ctx, templ_7745c5c3_Buffer)
-			if templ_7745c5c3_Err != nil {
-				return templ_7745c5c3_Err
-			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<div class=\"flex flex-col items-center justify-center max-w-4xl w-full py-5\"><img class=\"w-32 mb-2 drop-shadow-2xl drop-shadow-green-300/40 \" src=\"/static/assets/img/goo_resized.webp\" alt=\"A melting vue.js logo\"><p class=\"text-5xl font-bold\">Welcome to <span class=\"italic text-go drop-shadow-2xl drop-shadow-go/50\">Gooo</span><span class=\"align-super text-sm\">(\"goo\")</span></p><p class=\"text-lg\">A Breath of Fresh Air That Gives You More Control</p><div gooo-layout class=\"flex flex-col items-center h-full w-full\">")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, " <main class=\"w-full h-full bg-base-100 flex items-start justify-center px-4 py-2 overflow-auto\"><div class=\"flex flex-col items-center justify-center max-w-5xl w-full py-5\"><div gooo-layout class=\"flex flex-col items-center h-full w-full my-5\">")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -63,7 +55,7 @@ func Main(title string) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</div></div></main>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</div></div></main>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
