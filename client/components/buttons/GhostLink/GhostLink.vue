@@ -7,7 +7,7 @@ const props = defineProps<GhostLinkProps>()
 </script>
 
 <template>
-  <Button as-child variant="outline">
+  <Button as-child variant="ghost">
     <GoooLink :href="props.href"> {{ props.text }} </GoooLink>
   </Button>
 </template>
