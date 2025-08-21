@@ -43,7 +43,7 @@ func Home() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"w-full flex flex-col items-center justify-center\"><p class=\"text-7xl font-extrabold text-center text-pretty mt-20 text-primary\">The Web Toolkit for Go and Vue Projects</p></div>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"w-full flex flex-col items-center justify-center\"><p class=\"text-7xl font-extrabold text-center text-pretty mt-20 bg-clip-text text-transparent bg-gradient-to-br from-vue to-go leading-tight max-w-6xl\">The Web Toolkit for Go and Vue Projects</p></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
