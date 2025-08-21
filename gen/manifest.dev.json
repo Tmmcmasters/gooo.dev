@@ -3,6 +3,7 @@
 	"inputs": {
 		"goooNavigation": "client/utils/goooNavigation.ts",
 		"themeSwitcher": "client/themeSwitcher.ts",
-		"ghostLink": "client/ghostLink.ts"
+		"ghostLink": "client/ghostLink.ts",
+		"outlineGhostLink": "client/outlineGhostLink.ts"
 	}
 }

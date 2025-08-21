@@ -1,0 +1,14 @@
+package GoooLink
+
+import "Gooo/server/utility"
+import "github.com/lithammer/shortuuid/v4"
+
+templ OutlineGhost(url string, text string) {
+	{{ uniqueId := "outline-ghost-link-" + shortuuid.New() }}
+	<div id={ uniqueId } data-url={ url } data-text={ text }>
+		<a href={ url }>
+			{ text }
+		</a>
+	</div>
+	@serverUtility.ConnectFrontend("outlineGhostLink")
+}
