@@ -1,4 +1,4 @@
-export interface GhostLinkProps {
+export type GhostLinkProps = {
     href: string
     text: string
 }

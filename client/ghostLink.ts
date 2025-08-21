@@ -9,8 +9,6 @@ goooHydrate('ghostLink', 'ghost-link-', (el) => {
         href: el.getAttribute('data-url') ?? "",
         text: el.getAttribute('data-text') ?? "",
     }
-    console.log(`Server props: ${JSON.stringify(serverProps)}`);
-
     const app = createApp(GhostLink, serverProps)
     app.mount(el)
     return app;
