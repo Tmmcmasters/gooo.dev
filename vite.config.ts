@@ -26,6 +26,7 @@ export default defineConfig({
         themeSwitcher: fileURLToPath(new URL('./client/themeSwitcher.ts', import.meta.url)),
         ghostLink: fileURLToPath(new URL('./client/ghostLink.ts', import.meta.url)),
         outlineGhostLink: fileURLToPath(new URL('./client/outlineGhostLink.ts', import.meta.url)),
+        drawer: fileURLToPath(new URL('./client/drawer.ts', import.meta.url)),
       },
       output: {
         entryFileNames: 'js/[name].[hash].js',

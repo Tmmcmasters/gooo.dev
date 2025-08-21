@@ -4,6 +4,7 @@
 		"goooNavigation": "client/utils/goooNavigation.ts",
 		"themeSwitcher": "client/themeSwitcher.ts",
 		"ghostLink": "client/ghostLink.ts",
-		"outlineGhostLink": "client/outlineGhostLink.ts"
+		"outlineGhostLink": "client/outlineGhostLink.ts",
+		"drawer": "client/drawer.ts"
 	}
 }

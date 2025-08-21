@@ -4,6 +4,8 @@ package serverGenerated
 // ManifestCache is the pre-generated manifest cache
 var ManifestCache = map[string]string{
 
+	"drawer": "client/drawer.ts",
+
 	"ghostLink": "client/ghostLink.ts",
 
 	"goooNavigation": "client/utils/goooNavigation.ts",
