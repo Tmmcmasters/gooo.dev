@@ -1,8 +1,12 @@
 package GoooLink
 
 import "Gooo/server/utility"
+import "github.com/lithammer/shortuuid/v4"
+
+var uniqueID = shortuuid.New()
 
 templ Ghost(viteInputName string, url string) {
-	<div id></div>
+	<script type=""></script>
+	<div id={ uniqueID }></div>
 	@serverUtility.ConnectFrontend(viteInputName)
 }
