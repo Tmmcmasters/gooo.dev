@@ -2,7 +2,6 @@ package serverComponents
 
 import "Gooo/server/components/goooLink"
 import "Gooo/server/components/buttons"
-import "Gooo/server/icons"
 
 templ Navigation() {
 	<nav class="sticky top-0 w-full py-2 flex justify-center items-center backdrop-blur-md bg-background/10 border-b border-border px-2 sm:px-8">
@@ -20,7 +19,7 @@ templ Navigation() {
 			</div>
 			// Icons
 			<div class="flex items-center justify-center gap-x-2">
-				@Icons.Github()
+				@Buttons.Github()
 				@ThemeSwitcher()
 				<div class="block sm:hidden">
 					@Buttons.Drawer()

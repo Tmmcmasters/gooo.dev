@@ -10,7 +10,6 @@ import templruntime "github.com/a-h/templ/runtime"
 
 import "Gooo/server/components/goooLink"
 import "Gooo/server/components/buttons"
-import "Gooo/server/icons"
 
 func Navigation() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -53,7 +52,7 @@ func Navigation() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = Icons.Github().Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = Buttons.Github().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
