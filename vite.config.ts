@@ -32,7 +32,6 @@ export default defineConfig({
       output: {
         entryFileNames: 'js/[name].[hash].js',
         chunkFileNames: 'js/[name].[hash].js',
-        // assetFileNames: 'css/[name].[hash].[ext]',
         assetFileNames: ({ name }) => {
           if (name?.endsWith('.css')) {
             console.log(name)
