@@ -50,7 +50,7 @@
     ]
   },
   "client/homeLogo.ts": {
-    "file": "js/homeLogo.BN-QaVo-.js",
+    "file": "js/homeLogo.BHfHJTS4.js",
     "name": "homeLogo",
     "src": "client/homeLogo.ts",
     "isEntry": true,
@@ -62,7 +62,7 @@
       "client/utils/goooNavigation.ts"
     ],
     "assets": [
-      "css/goo_resized.CJG9i3hV.webp"
+      "static/assets/img/goo_resized.webp"
     ]
   },
   "client/outlineGhostLink.ts": {
@@ -99,7 +99,7 @@
     ]
   },
   "static/assets/img/goo_resized.webp": {
-    "file": "css/goo_resized.CJG9i3hV.webp",
+    "file": "static/assets/img/goo_resized.webp",
     "src": "static/assets/img/goo_resized.webp"
   }
 }

@@ -4,16 +4,16 @@ package serverGenerated
 // ManifestCache is the pre-generated manifest cache
 var ManifestCache = map[string]string{
 
-	"drawer": "client/drawer.ts",
+	"drawer": "/gen/js/drawer.CfBzbFio.js",
 
-	"ghostLink": "client/ghostLink.ts",
+	"ghostLink": "/gen/js/ghostLink.Cp0JoWOW.js",
 
-	"goooNavigation": "client/utils/goooNavigation.ts",
+	"goooNavigation": "/gen/js/goooNavigation.CFShLEj9.js",
 
-	"homeLogo": "client/homeLogo.ts",
+	"homeLogo": "/gen/js/homeLogo.BHfHJTS4.js",
 
-	"outlineGhostLink": "client/outlineGhostLink.ts",
+	"outlineGhostLink": "/gen/js/outlineGhostLink.CT8el2yp.js",
 
-	"themeSwitcher": "client/themeSwitcher.ts",
+	"themeSwitcher": "/gen/js/themeSwitcher.BBKZLMne.js",
 
 }
