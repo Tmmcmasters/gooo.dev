@@ -8,6 +8,14 @@ const fetchStatus = shallowRef<'pending' | 'success' | 'error' | 'idle'>('idle')
 const currentUrl = shallowRef(window.location.pathname)
 let isInitialized = false
 
+function unmountAllVueApps() {
+    window.fileRegistry.forEach((entry, key) => {
+        if (entry.unMount) {
+            entry.unMount();
+        }
+    })
+}
+
 
 /**
  * Fetches a document from the given URL and updates the fetchStatus.
@@ -135,6 +143,9 @@ const swapLayout = (doc: Document, push = true, href = '') => {
         currentUrl.value = href
         return currentLayout
     } else {
+        // Unmount all Vue apps before swapping
+        unmountAllVueApps();
+
         // Non-matching layout types or no current layout: replace entire body
         const newBodyContent = doc.body.innerHTML
         document.body.innerHTML = newBodyContent
