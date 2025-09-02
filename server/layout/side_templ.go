@@ -47,7 +47,7 @@ func Side(title string) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, " <main class=\"w-full h-full bg-base-100 flex items-start justify-start px-4 py-2 overflow-auto \"><p>Hello There</p><div class=\"flex flex-col items-center justify-center gap-y-2 min-w-xs border-r border-border overflow-y-auto\"><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p></div><div class=\"flex flex-col items-center justify-center max-w-5xl w-full py-5\"><div gooo-layout class=\"flex flex-col items-center h-full w-full my-5\">")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, " <main class=\"w-full h-full bg-base-100 flex items-start justify-center px-4 pb-2 overflow-auto \"><div class=\"w-full h-full flex items-start justify-center\"><div class=\"flex flex-col items-center justify-center gap-y-2 w-full max-w-2xs border-r border-border overflow-y-auto py-5 \"><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p><p>Side</p></div><div class=\"flex flex-col items-center justify-center max-w-5xl w-full py-5\"><div gooo-layout class=\"flex flex-col items-center h-full w-full my-5\">")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -55,7 +55,7 @@ func Side(title string) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</div></div></main>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</div></div></div></main>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
