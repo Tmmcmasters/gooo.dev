@@ -6,10 +6,10 @@ templ Side(title string) {
 	@Base(title) {
 		@serverComponents.Navigation()
 		<div class="flex flex-col min-h-screen">
-			<main class="w-full h-full bg-base-100 flex items-start justify-center px-4 pb-2 overflow-auto ">
+			<div class="w-full h-full bg-base-100 flex items-start justify-center px-4 pb-2 overflow-auto ">
 				<div class="w-full h-full flex items-start justify-center">
 					// side navigation
-					<div class="flex flex-col items-start justify-center gap-y-2 w-full max-w-3xs border-r border-border overflow-y-auto py-5 grow max-h-full">
+					<div class="flex flex-col items-start justify-center gap-y-2 w-full max-w-3xs border-r border-border overflow-y-auto py-5">
 						<p>Side</p>
 						<p>Side</p>
 						<p>Side</p>
@@ -54,13 +54,13 @@ templ Side(title string) {
 						<p>Side</p>
 						<p>Side</p>
 					</div>
-					<div class="flex flex-col items-center justify-center max-w-5xl w-full py-5">
+					<main class="flex flex-col items-center justify-center max-w-5xl w-full py-5">
 						<div gooo-layout class="flex flex-col items-center h-full w-full my-5">
 							{ children... }
 						</div>
-					</div>
+					</main>
 				</div>
-			</main>
+			</div>
 		</div>
 	}
 }
