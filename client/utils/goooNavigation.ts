@@ -115,21 +115,36 @@ const parseHtml = (html: string) => new DOMParser().parseFromString(html, 'text/
  */
 const swapLayout = (doc: Document, push = true, href = '') => {
     const newLayout = doc.querySelector('[gooo-layout]')
-    if (!newLayout) {
-        console.error('Missing [gooo-layout]');
-        console.error(doc.documentElement.outerHTML);
+    const currentLayout = document.querySelector('[gooo-layout]')
 
+    if (!newLayout) {
+        console.error('Missing [gooo-layout] in new document');
+        console.error(doc.documentElement.outerHTML);
         fetchStatus.value = 'error'
         location.href = href
         return false
     }
 
-    const current = document.querySelector('[gooo-layout]')
-    current?.replaceWith(newLayout)
-    if (push) history.pushState({ url: href }, doc.title ?? document.title, href)
-    currentUrl.value = href
-    return newLayout
+    const newLayoutType = newLayout.getAttribute('gooo-layout')
+    const currentLayoutType = currentLayout?.getAttribute('gooo-layout')
+
+    if (currentLayout && newLayoutType === currentLayoutType) {
+        // Matching layout types: swap only the inner content of [gooo-layout]
+        currentLayout.innerHTML = newLayout.innerHTML
+        if (push) history.pushState({ url: href }, doc.title ?? document.title, href)
+        currentUrl.value = href
+        return currentLayout
+    } else {
+        // Non-matching layout types or no current layout: replace entire body
+        const newBodyContent = doc.body.innerHTML
+        document.body.innerHTML = newBodyContent
+        if (push) history.pushState({ url: href }, doc.title ?? document.title, href)
+        currentUrl.value = href
+        return document.body
+    }
 }
+
+
 /**
  * A map of URLs to their corresponding prefetched HTML content.
  * @type {Map<string, string>}
